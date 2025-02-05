@@ -1,9 +1,15 @@
-function add(num1: number, num2: number) {
-	return num1 + num2;
-}
+enum Role {ADMIN, AUTHOR, GUEST_USER};
 
-const n1 = 2;
-const n2 = 20;
-
-const ans = add(n1, n2);
-console.log(ans);
+const person: {
+	name: string;
+	age: number;
+	skills: string[];
+	product: [number, string];
+    role: Role
+} = {
+	name: "aman",
+	age: 25,
+	skills: ["React", "Node"],
+	product: [10, "macbook"],
+	role: Role.ADMIN,
+};

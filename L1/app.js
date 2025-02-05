@@ -1,7 +1,14 @@
-function add(num1, num2) {
-    return num1 + num2;
-}
-var n1 = 2;
-var n2 = 20;
-var ans = add(n1, n2);
-console.log(ans);
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 0] = "ADMIN";
+    Role[Role["AUTHOR"] = 1] = "AUTHOR";
+    Role[Role["GUEST_USER"] = 2] = "GUEST_USER";
+})(Role || (Role = {}));
+;
+var person = {
+    name: "aman",
+    age: 25,
+    skills: ["React", "Node"],
+    product: [10, "macbook"],
+    role: Role.ADMIN,
+};
